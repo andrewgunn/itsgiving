@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IT'S GIVING — Gut Friendly Soda</title>
+  <meta name="description" content="Feel good fizz. Real fruit juice, 6g of gut-friendly fibre, low sugar and no artificial sweeteners. £1 a can.">
+  <meta name="theme-color" content="#e8a317">
+  <meta property="og:title" content="IT'S GIVING — Gut Friendly Soda">
+  <meta property="og:description" content="Feel good fizz with 6g of fibre in every can. Trust your gut.">
+  <meta property="og:image" content="assets/img/trio.webp">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/splash-mango.webp">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-flavour="mango">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Announcement -->
+  <div class="announce" aria-label="Announcements">
+    <div class="announce__track">
+      <span>Trust your gut</span><span>6g fibre in every can</span><span>£1 a can</span><span>No artificial sweeteners</span><span>Made with real fruit juice</span>
+      <span aria-hidden="true">Trust your gut</span><span aria-hidden="true">6g fibre in every can</span><span aria-hidden="true">£1 a can</span><span aria-hidden="true">No artificial sweeteners</span><span aria-hidden="true">Made with real fruit juice</span>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" aria-label="IT'S GIVING home"><span class="logo"></span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#flavours">Flavours</a>
+      <a href="#fibre">Why fibre</a>
+      <a href="#inside">What's inside</a>
+      <a href="#faq">FAQs</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__account" href="https://www.itsgivingdrinks.com/account" aria-label="Account">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+      </a>
+      <button class="cart-btn" type="button" data-open-cart aria-label="Open basket">
+        <span>Basket</span><b class="cart-count" data-cart-count>0</b>
+      </button>
+      <button class="burger" type="button" aria-label="Menu" aria-expanded="false" data-burger><i></i><i></i></button>
+    </div>
+  </header>
+  <div class="mobile-menu" data-mobile-menu hidden>
+    <a href="#flavours">Flavours</a><a href="#fibre">Why fibre</a><a href="#inside">What's inside</a><a href="#faq">FAQs</a><a href="#stockists">Stock us</a>
+  </div>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top" aria-label="Feel good fizz">
+      <canvas class="bubbles" aria-hidden="true"></canvas>
+      <div class="hero__giant" aria-hidden="true"><span data-giant>MANGO</span></div>
+
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="dot"></span> Gut friendly soda</p>
+          <h1 class="hero__title">
+            <span class="line"><span>Feel</span></span>
+            <span class="line"><span>good</span></span>
+            <span class="line"><span class="fizz">fizz<em>!</em></span></span>
+          </h1>
+          <p class="hero__sub">Real fruit juice, a splash of apple cider vinegar and <strong>6g of gut-loving fibre</strong> in every can. All for a quid.</p>
+          <div class="hero__cta">
+            <a href="#flavours" class="btn btn--light">Shop the flavours <span class="arrow">→</span></a>
+            <a href="#fibre" class="btn btn--ghost">Why fibre?</a>
+          </div>
+          <ul class="hero__ticks">
+            <li>Low sugar</li><li>Low calorie</li><li>No artificial sweeteners</li>
+          </ul>
+        </div>
+
+        <div class="hero__stage" data-tilt>
+          <div class="stage__halo"></div>
+          <div class="stage__arch">
+            <img class="stage__img is-active" data-stage="mango" src="assets/img/splash-mango.webp" alt="Mango & Passionfruit can bursting open with fizz" width="1400" height="1400">
+            <img class="stage__img" data-stage="apple" src="assets/img/splash-apple.webp" alt="Apple & Elderflower can bursting open with fizz" width="1400" height="1400" loading="lazy">
+            <img class="stage__img" data-stage="cherry" src="assets/img/splash-cherry.webp" alt="Black Cherry can bursting open with fizz" width="1400" height="1400" loading="lazy">
+          </div>
+          <div class="sticker sticker--fibre" aria-hidden="true"><b>6g</b><span>fibre</span></div>
+          <div class="sticker sticker--price" aria-hidden="true"><b>£1</b><span>a can</span></div>
+        </div>
+      </div>
+
+      <div class="picker" role="tablist" aria-label="Choose a flavour">
+        <button role="tab" class="picker__btn" data-pick="apple" aria-selected="false"><i style="--c:#3f8a47"></i>Apple &amp; Elderflower</button>
+        <button role="tab" class="picker__btn is-active" data-pick="mango" aria-selected="true"><i style="--c:#f2b01e"></i>Mango &amp; Passionfruit</button>
+        <button role="tab" class="picker__btn" data-pick="cherry" aria-selected="false"><i style="--c:#8d5b9c"></i>Black Cherry</button>
+      </div>
+      <div class="hero__progress" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- Claims band -->
+    <section class="band" aria-label="What's in every can">
+      <div class="band__row band__row--a">
+        <div class="band__track">
+          <span>6g fibre</span><b>✺</b><span>Apple cider vinegar</span><b>✺</b><span>Vitamin C</span><b>✺</b><span>Low sugar</span><b>✺</b><span>Plant based</span><b>✺</b><span>Caffeine free</span><b>✺</b>
+          <span>6g fibre</span><b>✺</b><span>Apple cider vinegar</span><b>✺</b><span>Vitamin C</span><b>✺</b><span>Low sugar</span><b>✺</b><span>Plant based</span><b>✺</b><span>Caffeine free</span><b>✺</b>
+        </div>
+      </div>
+      <div class="band__row band__row--b" aria-hidden="true">
+        <div class="band__track">
+          <span>Trust your gut</span><b>●</b><span>Feel good fizz</span><b>●</b><span>Nothing fancy</span><b>●</b><span>Trust your gut</span><b>●</b><span>Feel good fizz</span><b>●</b><span>Nothing fancy</span><b>●</b>
+          <span>Trust your gut</span><b>●</b><span>Feel good fizz</span><b>●</b><span>Nothing fancy</span><b>●</b><span>Trust your gut</span><b>●</b><span>Feel good fizz</span><b>●</b><span>Nothing fancy</span><b>●</b>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIBRE -->
+    <section class="fibre" id="fibre">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow--pink">The fibre gap</p>
+          <h2>Your gut’s been <em>quietly</em> asking for this.</h2>
+          <p class="lead">Adults need 30g of fibre a day to support gut health and overall wellbeing. Almost all of us fall short. We figured a can of pop could help.</p>
+        </header>
+
+        <div class="stats">
+          <article class="stat reveal">
+            <p class="stat__num"><span data-count="30">0</span>g</p>
+            <p class="stat__label">of fibre a day is what adults need</p>
+          </article>
+          <article class="stat stat--pink reveal">
+            <p class="stat__num"><span data-count="96">0</span>%</p>
+            <p class="stat__label">of UK adults don’t hit their fibre RDA</p>
+          </article>
+          <article class="stat stat--yellow reveal">
+            <p class="stat__num"><span data-count="6">0</span>g</p>
+            <p class="stat__label">of plant fibre in every single can</p>
+          </article>
+        </div>
+
+        <div class="meter reveal" aria-label="One can gives you 6 grams, about 20 percent of your 30 gram daily fibre target">
+          <div class="meter__top">
+            <span>Your daily 30g</span>
+            <span class="meter__callout">One can ≈ <b>20%</b> of it</span>
+          </div>
+          <div class="meter__bar">
+            <div class="meter__fill"></div>
+            <div class="meter__ticks"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="meter__scale"><span>0g</span><span>6g</span><span>12g</span><span>18g</span><span>24g</span><span>30g</span></div>
+        </div>
+
+        <p class="fibre__note reveal">Higher fibre intake is linked to lower risk of heart disease, stroke, type 2 diabetes and colorectal cancer — and it feeds the good bacteria in your gut. Easy, affordable, and now fizzy.</p>
+      </div>
+    </section>
+
+    <!-- FLAVOURS -->
+    <section class="flavours" id="flavours">
+      <div class="wrap">
+        <header class="section-head section-head--row reveal">
+          <div>
+            <p class="eyebrow eyebrow--pink">Shop the range</p>
+            <h2>Three flavours.<br>Zero guilt.</h2>
+          </div>
+          <p class="lead">Cases of 24 × 330ml cans, delivered. That’s £1 a can — no big mark-ups, just good soda that’s easy to afford.</p>
+        </header>
+
+        <div class="cards">
+          <article class="card" style="--tone:#3f8a47;--tone-2:#cfe7b9" data-product="apple">
+            <div class="card__media">
+              <img src="assets/img/bed-apple.webp" alt="Apple & Elderflower can on a bed of green apples" loading="lazy" width="900" height="900">
+              <span class="card__tag">Crisp &amp; floral</span>
+            </div>
+            <div class="card__body">
+              <h3>Apple &amp;<br>Elderflower</h3>
+              <p>Crisp orchard apple with a soft, floral hit of elderflower. Summer in a can.</p>
+              <div class="card__meta"><span>24 × 330ml</span><span class="price">£24.00</span></div>
+              <div class="card__buy">
+                <div class="qty" data-qty><button type="button" aria-label="Decrease quantity" data-step="-1">−</button><output>1</output><button type="button" aria-label="Increase quantity" data-step="1">+</button></div>
+                <button class="btn btn--tone" type="button" data-add="54078232559962" data-name="Apple & Elderflower" data-variant="24 pack" data-price="24" data-img="assets/img/studio-apple.webp">Add to basket</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" style="--tone:#e59c0c;--tone-2:#ffe7a3" data-product="mango">
+            <div class="card__media">
+              <img src="assets/img/bed-mango.webp" alt="Mango & Passionfruit can surrounded by mangoes and passionfruit" loading="lazy" width="900" height="900">
+              <span class="card__tag">Bestseller energy</span>
+            </div>
+            <div class="card__body">
+              <h3>Mango &amp;<br>Passionfruit</h3>
+              <p>Juicy, sunny mango meets tangy passionfruit. Tropical holiday, no passport.</p>
+              <div class="card__meta"><span>24 × 330ml</span><span class="price">£24.00</span></div>
+              <div class="card__buy">
+                <div class="qty" data-qty><button type="button" aria-label="Decrease quantity" data-step="-1">−</button><output>1</output><button type="button" aria-label="Increase quantity" data-step="1">+</button></div>
+                <button class="btn btn--tone" type="button" data-add="54078236262746" data-name="Mango & Passionfruit" data-variant="24 pack" data-price="24" data-img="assets/img/studio-mango.webp">Add to basket</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" style="--tone:#8d5b9c;--tone-2:#e6d4ef" data-product="cherry">
+            <div class="card__media">
+              <img src="assets/img/bed-cherry.webp" alt="Black Cherry can on a pile of fresh cherries" loading="lazy" width="900" height="900">
+              <span class="card__tag">Deep &amp; juicy</span>
+            </div>
+            <div class="card__body">
+              <h3>Black<br>Cherry</h3>
+              <p>Dark, rich and juicy black cherry with a bright, fizzy finish. Proper grown-up pop.</p>
+              <div class="card__meta"><span>24 × 330ml</span><span class="price">£24.00</span></div>
+              <div class="card__buy">
+                <div class="qty" data-qty><button type="button" aria-label="Decrease quantity" data-step="-1">−</button><output>1</output><button type="button" aria-label="Increase quantity" data-step="1">+</button></div>
+                <button class="btn btn--tone" type="button" data-add="54078234394970" data-name="Black Cherry" data-variant="24 pack" data-price="24" data-img="assets/img/studio-cherry.webp">Add to basket</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Mixed pack -->
+        <article class="mixed reveal">
+          <div class="mixed__media">
+            <img src="assets/img/cooler-tall.webp" alt="A cool box full of ice and IT'S GIVING cans in all three flavours" loading="lazy" width="1000" height="1500">
+          </div>
+          <div class="mixed__body">
+            <p class="eyebrow">Can’t choose? Don’t.</p>
+            <h3>The Mixed Pack</h3>
+            <p>Four of each flavour, twelve cans, one very happy fridge. The easiest way to find your favourite (spoiler: it’s all of them).</p>
+            <ul class="mixed__list">
+              <li><i style="--c:#3f8a47"></i>4 × Apple &amp; Elderflower</li>
+              <li><i style="--c:#f2b01e"></i>4 × Mango &amp; Passionfruit</li>
+              <li><i style="--c:#8d5b9c"></i>4 × Black Cherry</li>
+            </ul>
+            <div class="mixed__buy">
+              <span class="price price--big">£12<small>.00</small></span>
+              <div class="qty qty--light" data-qty><button type="button" aria-label="Decrease quantity" data-step="-1">−</button><output>1</output><button type="button" aria-label="Increase quantity" data-step="1">+</button></div>
+              <button class="btn btn--light" type="button" data-add="54080540148058" data-name="Mixed Pack" data-variant="12 pack" data-price="12" data-img="assets/img/trio.webp">Add to basket</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- INSIDE -->
+    <section class="inside" id="inside">
+      <div class="wrap">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow eyebrow--pink">What’s inside</p>
+          <h2>Simple ingredients,<br>doing what they <em>naturally</em> do.</h2>
+        </header>
+
+        <div class="inside__grid">
+          <ul class="ingredients ingredients--left">
+            <li class="reveal"><span class="ing__icon">🌱</span><div><h4>Chicory root fibre</h4><p>6g of natural plant fibre to feed the good bacteria in your gut.</p></div></li>
+            <li class="reveal"><span class="ing__icon">🍎</span><div><h4>Apple cider vinegar</h4><p>A splash to support digestion and round out the flavour.</p></div></li>
+            <li class="reveal"><span class="ing__icon">🧃</span><div><h4>Real fruit juice</h4><p>Bold, refreshing taste from actual fruit. Not a lab.</p></div></li>
+          </ul>
+
+          <div class="inside__can reveal">
+            <div class="inside__ring"></div>
+            <img src="assets/img/trio.webp" alt="The three IT'S GIVING flavours side by side" loading="lazy" width="1400" height="1400">
+          </div>
+
+          <ul class="ingredients ingredients--right">
+            <li class="reveal"><span class="ing__icon">🍃</span><div><h4>A touch of stevia</h4><p>Plant-derived, just enough to balance — never overpower.</p></div></li>
+            <li class="reveal"><span class="ing__icon">🍊</span><div><h4>Vitamin C</h4><p>A little extra something in every sip.</p></div></li>
+            <li class="reveal"><span class="ing__icon">🫧</span><div><h4>Lots of bubbles</h4><p>Because it’s still pop. Proper, feel good fizz.</p></div></li>
+          </ul>
+        </div>
+
+        <div class="badges reveal" aria-label="Every can is">
+          <span class="badge">No artificial sweeteners</span>
+          <span class="badge">Low sugar</span>
+          <span class="badge">Low calorie</span>
+          <span class="badge">Vegan friendly</span>
+          <span class="badge">Caffeine free</span>
+          <span class="badge">Recyclable can</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUE -->
+    <section class="value" aria-label="Value">
+      <div class="wrap value__inner">
+        <div class="value__big reveal" aria-hidden="true">£1</div>
+        <div class="value__copy reveal">
+          <p class="eyebrow">Nothing fancy</p>
+          <h2>Gut-friendly soda without the gut-punch price.</h2>
+          <p>We strip things back and focus on what matters — great taste, simple ingredients and everyday value. Bold flavour, simple extras and a price that fits real life.</p>
+          <a href="#flavours" class="btn btn--dark">Stock up <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOCIAL -->
+    <section class="social" aria-label="On the gram">
+      <div class="wrap">
+        <header class="section-head section-head--row reveal">
+          <div>
+            <p class="eyebrow eyebrow--pink">@itsgivingdrinks</p>
+            <h2>Cracked open<br>everywhere.</h2>
+          </div>
+          <div class="social__links">
+            <a class="btn btn--dark" href="https://www.instagram.com/itsgivingdrinks" target="_blank" rel="noopener">Instagram</a>
+            <a class="btn btn--outline" href="https://www.tiktok.com/@itsgivingdrinks" target="_blank" rel="noopener">TikTok</a>
+          </div>
+        </header>
+      </div>
+      <div class="gallery">
+        <figure class="g g--1"><img src="assets/img/splash-apple.webp" alt="" loading="lazy"></figure>
+        <figure class="g g--2"><img src="assets/img/flatlay.webp" alt="" loading="lazy"></figure>
+        <figure class="g g--3"><img src="assets/img/cooler.webp" alt="" loading="lazy"></figure>
+        <figure class="g g--4"><img src="assets/img/lifestyle.webp" alt="" loading="lazy"></figure>
+        <figure class="g g--5"><img src="assets/img/splash-cherry.webp" alt="" loading="lazy"></figure>
+        <figure class="g g--6"><img src="assets/img/studio-mango.webp" alt="" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="wrap faq__inner">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow--pink">FAQs</p>
+          <h2>Good questions.</h2>
+          <p class="lead">Can’t find what you’re after? <a href="https://www.itsgivingdrinks.com/pages/contact">Drop us a message</a> — we’re all ears.</p>
+        </header>
+        <div class="faq__list">
+          <details class="reveal" open>
+            <summary>What is IT’S GIVING?</summary>
+            <p>A refreshing soft drink with added benefits, so you no longer need to feel guilty about having a can of pop. It’s made with natural fruit flavours, no artificial sweeteners, is naturally low in sugar and — the absolute bonus — has 6g of fibre to feed all the good bacteria in your gut.</p>
+          </details>
+          <details class="reveal">
+            <summary>What does ‘gut friendly’ actually mean?</summary>
+            <p>Our ingredients support the health of your gut. We’re feeding all the good bacteria with fibre — 6g to be exact — which helps support digestion, keep you regular (if you know what we mean 😉) and make you less bloated over time.</p>
+          </details>
+          <details class="reveal">
+            <summary>Where does the fibre come from?</summary>
+            <p>From plants. The fibre comes from chicory root — a natural plant source commonly used for its gut-friendly benefits. We also include a splash of apple cider vinegar, which helps support digestion and rounds out the flavour.</p>
+          </details>
+          <details class="reveal">
+            <summary>Is it sweet or sour?</summary>
+            <p>It’s just right. We don’t use artificial sweeteners. Instead we use a small amount of stevia — a naturally derived sweetener from plants — to balance the flavour, not overpower it. The real star is the fruit.</p>
+          </details>
+          <details class="reveal">
+            <summary>There are small bits at the bottom of my can. Is that normal?</summary>
+            <p>Absolutely — that’s the good stuff. Because we use real fruit juice, plant-based fibre and apple cider vinegar, some natural settling happens over time. Give it a very gentle swirl (don’t shake — it’s bubbly!) to mix it back in.</p>
+          </details>
+          <details class="reveal">
+            <summary>Does it contain caffeine?</summary>
+            <p>No. IT’S GIVING is caffeine-free, so you can enjoy it any time of day.</p>
+          </details>
+          <details class="reveal">
+            <summary>Is it vegan?</summary>
+            <p>Yes. All of our drinks are made with plant-based ingredients and are suitable for a vegan diet.</p>
+          </details>
+          <details class="reveal">
+            <summary>Is it OK to have more than one can a day?</summary>
+            <p>With 6g of fibre per can (around 20% of your daily recommended intake) it’s a simple way to top up your day. As always, enjoy in moderation as part of a balanced diet.</p>
+          </details>
+          <details class="reveal">
+            <summary>Can kids drink it?</summary>
+            <p>IT’S GIVING is suitable for the whole family. As with any product containing fibre, children should enjoy it as part of a balanced diet. For specific health concerns, check with a health professional. If you’re pregnant, breastfeeding or diabetic, we recommend checking with your doctor first.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- STOCKISTS -->
+    <section class="stockists" id="stockists">
+      <div class="wrap stockists__inner reveal">
+        <div>
+          <p class="eyebrow">Find us in the wild</p>
+          <h2>Run a shop?<br>Stock the fizz.</h2>
+          <p>IT’S GIVING is popping up in convenience stores and independent retailers across the UK, with more joining all the time. Fancy being one of them?</p>
+        </div>
+        <a class="btn btn--dark btn--xl" href="https://www.itsgivingdrinks.com/pages/contact">Get in touch <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="loop" aria-label="Newsletter">
+      <div class="wrap loop__inner reveal">
+        <h2>Stay in the loop!</h2>
+        <p>New flavours, drops and where to find us. No spam, just fizz.</p>
+        <form class="loop__form" method="post" action="https://www.itsgivingdrinks.com/contact#newsletter" accept-charset="UTF-8" data-newsletter>
+          <input type="hidden" name="form_type" value="customer">
+          <input type="hidden" name="utf8" value="✓">
+          <input type="hidden" name="contact[tags]" value="newsletter">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" type="email" name="contact[email]" placeholder="you@example.com" required autocomplete="email">
+          <button class="btn btn--pink" type="submit">Sign me up</button>
+        </form>
+        <p class="loop__fine">By signing up you agree to receive updates and marketing emails from IT’S GIVING. Unsubscribe any time. See our <a href="https://www.itsgivingdrinks.com/policies/privacy-policy">Privacy Policy</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__top">
+      <div class="footer__brand">
+        <span class="logo logo--xl"></span>
+        <p>Feel good fizz, nothing fancy. Go on — trust your gut.</p>
+      </div>
+      <nav class="footer__col" aria-label="Shop">
+        <h4>Shop</h4>
+        <a href="#flavours">Apple &amp; Elderflower</a>
+        <a href="#flavours">Mango &amp; Passionfruit</a>
+        <a href="#flavours">Black Cherry</a>
+        <a href="#flavours">Mixed Pack</a>
+      </nav>
+      <nav class="footer__col" aria-label="Help">
+        <h4>Help</h4>
+        <a href="#faq">FAQs</a>
+        <a href="https://www.itsgivingdrinks.com/pages/contact">Contact</a>
+        <a href="https://www.itsgivingdrinks.com/policies/shipping-policy">Shipping</a>
+        <a href="https://www.itsgivingdrinks.com/policies/refund-policy">Refunds</a>
+      </nav>
+      <nav class="footer__col" aria-label="Social">
+        <h4>Follow</h4>
+        <a href="https://www.instagram.com/itsgivingdrinks" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@itsgivingdrinks" target="_blank" rel="noopener">TikTok</a>
+      </nav>
+    </div>
+    <div class="footer__word" aria-hidden="true">IT’S GIVING</div>
+    <div class="wrap footer__bottom">
+      <span>© <span data-year>2026</span> IT’S GIVING DRINKS. All rights reserved.</span>
+      <span><a href="https://www.itsgivingdrinks.com/policies/privacy-policy">Privacy</a> · <a href="https://www.itsgivingdrinks.com/policies/terms-of-service">Terms</a></span>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="drawer-scrim" data-close-cart hidden></div>
+  <aside class="drawer" aria-label="Your basket" aria-hidden="true" data-drawer>
+    <header class="drawer__head">
+      <h3>Your basket</h3>
+      <button type="button" class="drawer__close" data-close-cart aria-label="Close basket">×</button>
+    </header>
+    <div class="drawer__items" data-cart-items></div>
+    <div class="drawer__empty" data-cart-empty>
+      <p>Your basket’s looking a bit flat.</p>
+      <a href="#flavours" class="btn btn--dark" data-close-cart>Add some fizz</a>
+    </div>
+    <footer class="drawer__foot" data-cart-foot>
+      <div class="drawer__total"><span>Subtotal</span><b data-cart-total>£0.00</b></div>
+      <p class="drawer__note">Shipping &amp; discounts calculated at checkout.</p>
+      <a class="btn btn--pink btn--block" href="#" data-checkout>Checkout securely <span class="arrow">→</span></a>
+    </footer>
+  </aside>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
