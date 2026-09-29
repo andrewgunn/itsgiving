@@ -25,6 +25,18 @@ assets/img/
 
 Run it locally with `python3 -m http.server` and open http://localhost:8000.
 
+## SEO
+
+The preview has `noindex, nofollow` set so search engines never treat it as a duplicate of itsgivingdrinks.com. Remove that tag only when the design ships as their real theme.
+
+When it becomes their Shopify theme, the aim is **zero SEO impact**:
+- Keep every existing URL (`/collections/all`, `/products/*`, `/pages/our-story`, `/pages/faqs`, `/pages/contact`, `/policies/*`). The theme changes, the URLs don't.
+- Keep product handles, page titles and meta descriptions as they are, or improve them on purpose.
+- Keep Shopify's built-in canonical tags, sitemap and product structured data. Dawn outputs these, so don't remove them from the new theme.
+- Keep headings real text and images with proper `alt` text, as the preview already does.
+- Watch Core Web Vitals: WebP images, lazy loading and no heavy libraries.
+- Preview it as an unpublished theme, compare before and after with a crawl, then publish.
+
 ## Taking it live
 
 This is a static front-end that talks to the existing Shopify store. It can go live in either of these ways:
